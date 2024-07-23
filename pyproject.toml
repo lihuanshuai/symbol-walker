@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "python-template"
+name = "symbol-walker"
 version = "0.1.0"
-description = "A short description of your project"
-authors = ["Your Name <your.email@example.com>"]
+description = "Walks through symbols in a Python project and generates a graph of the dependencies between them."
+authors = ["lihuanshuai <lihuanshuaiplus@qq.com>"]
 license = "MIT"
 readme = "README.md"
-keywords = ["template"]
-packages = [{include = "python_template"}]
+keywords = ["symbol", "walker", "dependency", "graph"]
+packages = [{include = "symbol_walker"}]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -15,22 +15,23 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
+click = "^8.1.7"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.0"
 
 [tool.poetry.scripts]
-your_command_name = "python_template:main"
+symbol-walker = "symbol-walker.command:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.urls]
-"homepage" = "https://github.com/your-username/python-template"
-"documentation" = "https://github.com/your-username/python-template/blob/main/README.md"
-"source" = "https://github.com/your-username/python-template"
-"tracker" = "https://github.com/your-username/python-template/issues"
+"homepage" = "https://github.com/lihuanshuai/symbol-walker"
+"documentation" = "https://github.com/lihuanshuai/symbol-walker/blob/main/README.md"
+"source" = "https://github.com/lihuanshuai/symbol-walker"
+"tracker" = "https://github.com/lihuanshuai/symbol-walker/issues"
 
 [tool.pytest.ini_options]
 testpaths = [

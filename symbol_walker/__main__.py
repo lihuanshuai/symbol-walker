@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from python_template.src import main
+from symbol_walker.command import main
 
 if __name__ == '__main__':
     main()
